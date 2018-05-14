@@ -1,0 +1,5 @@
+project('uart', 'c')
+add_project_arguments('-fPIC', '-nostdlib', '-nostartfiles', language: 'c')
+linker_script = join_paths(meson.current_source_dir(), 'link.ld')
+add_project_link_arguments('-T', linker_script, '-nostdlib', '-nostartfiles', language: 'c')
+executable('uart', ['startup.S', 'main.c'])

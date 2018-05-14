@@ -1,0 +1,14 @@
+[binaries]
+c = '/home/adityashah/riscv/bin/riscv64-unknown-elf-gcc'
+cpp = '/home/adityashah/riscv/bin/riscv64-unknown-elf-g++'
+ar = '/home/adityashah/riscv/bin/riscv64-unknown-elf-ar'
+strip = '/home/adityashah/riscv/bin/riscv64-unknown-elf-strip'
+
+[properties]
+needs_exe_wrapper = true
+
+[host_machine]
+system = 'bare metal'
+cpu_family = 'riscv64'
+cpu = 'rv64gcsu-v1.10.0'
+endian = 'little'
